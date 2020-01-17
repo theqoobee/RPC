@@ -24,10 +24,17 @@ h1 {
   -webkit-app-region: no-drag;
 }
 
-#snek {
+#snek{
   cursor: pointer;
   font-size: 500%;
   margin: auto;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+#snek:hover {
+  font-weight: 700;
+  font-size: 800%;
 }
 
 #boops {

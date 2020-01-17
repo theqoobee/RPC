@@ -2,22 +2,24 @@
 
 /* eslint-env browser */
 
-const { webFrame } = require('electron');
+
+console.log("aRE YOU READY KIDS???");
+
+// const { webFrame } = require('electron');
 
 const snek = document.getElementById('snek');
 const counter = document.getElementById('boops');
 
-webFrame.setZoomLevelLimits(1, 1);
-
+console.log("EYE EYE CAPTAIN");
 window.boops = 0;
 function boop() {
   window.boops += 1;
+  console.log(window.boops);
   counter.innerHTML = `${window.boops} BOOPS`;
 }
 
 snek.onmousedown = () => {
   snek.style['font-size'] = '550%';
-  boop();
 };
 
 snek.onmouseup = () => {
